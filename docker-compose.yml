@@ -4,7 +4,7 @@ services:
     container_name: kopuk-dunyasi-postgres
     restart: unless-stopped
     ports:
-      - "5435:5432"
+      - "5440:5432"
     environment:
       POSTGRES_USER: kopukdunyasi
       POSTGRES_PASSWORD: kopukdunyasi

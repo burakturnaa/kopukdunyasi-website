@@ -59,7 +59,7 @@ Default credentials (after seed):
 
 ```bash
 cp .env.example .env
-npm run db:up          # PostgreSQL via Docker (port 5435)
+npm run db:up          # PostgreSQL via Docker (port 5440)
 npm run db:setup       # prisma db push + seed
 ```
 
