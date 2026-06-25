@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3007](http://localhost:3007).
 
 ## Pages
 
@@ -49,7 +49,7 @@ src/
 
 ## CMS Admin Panel
 
-Admin panel: **http://localhost:3000/admin/login**
+Admin panel: **http://localhost:3007/admin/login**
 
 Default credentials (after seed):
 - Email: `admin@kopukdunyasi.com`
