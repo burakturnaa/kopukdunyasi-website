@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: kopuk-dunyasi-postgres
+    restart: unless-stopped
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: kopukdunyasi
+      POSTGRES_PASSWORD: kopukdunyasi
+      POSTGRES_DB: kopukdunyasi
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kopukdunyasi -d kopukdunyasi"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  postgres_data:
